@@ -1,110 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carta Restó-Bar</title>
-    <link href='style.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="carta-container">
-        <div class="encabezado">
-            <h1 class="titulo">Carta Restó-Bar</h1>
-        </div>
-        <div class="carta">
-            <table width="50%" class="table-categoria bebidas">
-                <tr width="100%" class="tr-categoria">
-                    <th width="100%">Bebidas<img class="categoria-icon" src="./icons/SC_Drink.svg" alt="drink"></th>
-                    <th></th>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Café</td>
-                    <td width="10%">$300</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Café con leche</td>
-                    <td width="10%">$400</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Gasesoa 500ml</td>
-                    <td width="10%">$500</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Copa de vino</td>
-                    <td width="10%">$550</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Jugo  de naranja exprimido</td>
-                    <td width="10%">$550</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Whisky</td>
-                    <td width="10%">$600</td>
-                </tr>
-            </table>
-            <table width="50%" class="table-categoria salados">
-                <tr width="100%" class="tr-categoria">
-                    <th width="100%">Salados<img class="categoria-icon" src="./icons/SC_FrenchFries.svg" alt="drink"></th>
-                    <th></th>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Queso y aceitunas</td>
-                    <td width="10%">$300</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Papas fritas</td>
-                    <td width="10%">$400</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Tostado</td>
-                    <td width="10%">$500</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Milanesa</td>
-                    <td width="10%">$550</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Empanadas</td>
-                    <td width="10%">$350</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Pizza</td>
-                    <td width="10%">$1100</td>
-                </tr>
-            </table>
-            <table width="50%" class="table-categoria postres">
-                <tr width="100%" class="tr-categoria">
-                    <th width="100%">Postres<img class="categoria-icon" src="./icons/SC_IceLolly.svg" alt="drink"></th>
-                    <th></th>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Tarta de manzana</td>
-                    <td width="10%">$300</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Helado</td>
-                    <td width="10%">$400</td>
-                </tr>
-                <tr class="tr-items">
-                    <td width="80%">Panqueque con DDL</td>
-                    <td width="10%">$500</td>
-                </tr>
-            </table>
-        </div>
-        
+      <div class="encabezado">
+        <h1 class="titulo">Carta Restó-Bar</h1>
+      </div>
+      <button
+        id="botonAbrirForm"
+        class="form-boton-abrir"
+        onclick="abrirCerrarForm()"
+      >
+        Registrarse
+      </button>
+      <div class="carta">
+        <table width="50%" class="table-categoria bebidas">
+          <tr width="100%" class="tr-categoria">
+            <th width="100%">
+              Bebidas<img
+                class="categoria-icon"
+                src="./icons/SC_Drink.svg"
+                alt="drink"
+              />
+            </th>
+            <th></th>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Café</td>
+            <td width="10%">$300</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Café con leche</td>
+            <td width="10%">$400</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Gasesoa 500ml</td>
+            <td width="10%">$500</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Copa de vino</td>
+            <td width="10%">$550</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Jugo de naranja exprimido</td>
+            <td width="10%">$550</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Whisky</td>
+            <td width="10%">$600</td>
+          </tr>
+        </table>
+        <table width="50%" class="table-categoria salados">
+          <tr width="100%" class="tr-categoria">
+            <th width="100%">
+              Salados<img
+                class="categoria-icon"
+                src="./icons/SC_FrenchFries.svg"
+                alt="drink"
+              />
+            </th>
+            <th></th>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Queso y aceitunas</td>
+            <td width="10%">$300</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Papas fritas</td>
+            <td width="10%">$400</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Tostado</td>
+            <td width="10%">$500</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Milanesa</td>
+            <td width="10%">$550</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Empanadas</td>
+            <td width="10%">$350</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Pizza</td>
+            <td width="10%">$1100</td>
+          </tr>
+        </table>
+        <table width="50%" class="table-categoria postres">
+          <tr width="100%" class="tr-categoria">
+            <th width="100%">
+              Postres<img
+                class="categoria-icon"
+                src="./icons/SC_IceLolly.svg"
+                alt="drink"
+              />
+            </th>
+            <th></th>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Tarta de manzana</td>
+            <td width="10%">$300</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Helado</td>
+            <td width="10%">$400</td>
+          </tr>
+          <tr class="tr-items">
+            <td width="80%">Panqueque con DDL</td>
+            <td width="10%">$500</td>
+          </tr>
+        </table>
+      </div>
     </div>
+
+    <div id="formBackground" class="form-background">
+      <div class="form-container">
+        <button
+          id="BotonCerrarForm"
+          class="form-boton-cerrar"
+          onclick="abrirCerrarForm()"
+        >
+          X
+        </button>
+        <div class="form-encabezado">
+          <h2 class="form-encabezado-texto">
+            Dejanos tus datos <br />para contactarte
+          </h2>
+        </div>
+        <form class="form-registro" action="submit">
+          <label for="input-nombre">Nombre</label>
+          <input
+            id="input-nombre"
+            placeholder="escribí tu nombre"
+            type="text"
+          />
+          <label for="input-apellido">Apellido</label>
+          <input
+            id="input-apellido"
+            placeholder="escribí tu apellido"
+            type="text"
+          />
+          <label for="input-mail">Email</label>
+          <input id="input-mail" placeholder="escribí tu email" type="text" />
+          <label for="input-telefono">Teléfono</label>
+          <input
+            id="input-telefono"
+            placeholder="escribí tu télefono"
+            type="text"
+          />
+          <button id="botonEnviar" class="form-boton">Enviar</button>
+        </form>
+      </div>
+    </div>
+
     <div class="footer">
-        <p class="footer-marca">Restó-Bar</p>
-        <p class="footer-direccion">Cochabamba 234 - tel (321) 4658-9273</p>
-        <ul class="footer-list">
-            <li class="footer-boton"><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li class="footer-boton"><a href="#"><i class="fa fa-facebook"></i></a></li>          
-            <li class="footer-boton"><a href="#"><i class="fa fa-twitter"></i></a></li>          
-            <li class="footer-boton"><a href="#"><i class="fa fa-github"></i></a></li>
-          </ul>
+      <p class="footer-marca">Restó-Bar</p>
+      <p class="footer-direccion">Cochabamba 234 - tel (321) 4658-9273</p>
+      <ul class="footer-list">
+        <li class="footer-boton">
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li class="footer-boton">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="footer-boton">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="footer-boton">
+          <a href="#"><i class="fa fa-github"></i></a>
+        </li>
+      </ul>
     </div>
-    
-</body>
+  </body>
+  <script src="./main.js"></script>
 </html>
