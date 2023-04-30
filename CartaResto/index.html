@@ -137,22 +137,33 @@
             Dejanos tus datos <br />para contactarte
           </h2>
         </div>
-        <form class="form-registro" action="submit">
+        <form class="form-registro" action="">
           <label for="input-nombre">Nombre</label>
+          <span class="invalid" id="mensajeInvalido0"></span>
           <input
             id="input-nombre"
             placeholder="escribí tu nombre"
             type="text"
+            required
           />
-          <label for="input-apellido">Apellido</label>
+          <label for="input-apellido0">Apellido</label>
+          <span class="invalid" id="mensajeInvalido1"></span>
           <input
             id="input-apellido"
             placeholder="escribí tu apellido"
             type="text"
+            required
           />
-          <label for="input-mail">Email</label>
-          <input id="input-mail" placeholder="escribí tu email" type="text" />
+          <label for="input-email">Email</label>
+          <span class="invalid" id="mensajeInvalido2"></span>
+          <input
+            id="input-email"
+            placeholder="escribí tu email"
+            type="text"
+            required
+          />
           <label for="input-telefono">Teléfono</label>
+          <span class="invalid" id="mensajeInvalido3"></span>
           <input
             id="input-telefono"
             placeholder="escribí tu télefono"

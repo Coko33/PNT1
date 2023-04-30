@@ -118,6 +118,8 @@ input {
 }
 label {
   margin-top: 10px;
+  display: inline;
+  white-space: nowrap;
 }
 input {
   width: 300px;
@@ -125,6 +127,16 @@ input {
   border-radius: 5px;
   border: solid 1px rgb(173, 173, 173);
   padding-left: 5px;
+}
+.invalid {
+  display: inline;
+  color: rgb(255, 75, 75);
+  font-weight: 500;
+  font-size: 12px;
+}
+.campoInvalido {
+  border: solid 1px rgb(255, 75, 75);
+  background-color: rgb(255, 193, 193);
 }
 .form-boton {
   position: absolute;
